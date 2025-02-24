@@ -1,0 +1,15 @@
+C:\code\Hahn\backend\src\Jobs\bin\Debug\net8.0\Jobs.deps.json
+C:\code\Hahn\backend\src\Jobs\bin\Debug\net8.0\Jobs.dll
+C:\code\Hahn\backend\src\Jobs\bin\Debug\net8.0\Jobs.pdb
+C:\code\Hahn\backend\src\Jobs\bin\Debug\net8.0\Core.dll
+C:\code\Hahn\backend\src\Jobs\bin\Debug\net8.0\Core.pdb
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.csproj.AssemblyReference.cache
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.AssemblyInfoInputs.cache
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.AssemblyInfo.cs
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.csproj.CoreCompileInputs.cache
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.csproj.CopyComplete
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.dll
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\refint\Jobs.dll
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\Jobs.pdb
+C:\code\Hahn\backend\src\Jobs\obj\Debug\net8.0\ref\Jobs.dll
