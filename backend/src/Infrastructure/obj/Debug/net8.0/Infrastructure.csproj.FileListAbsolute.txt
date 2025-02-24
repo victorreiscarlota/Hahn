@@ -15,3 +15,4 @@ C:\code\Hahn\backend\src\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.d
 C:\code\Hahn\backend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\code\Hahn\backend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\code\Hahn\backend\src\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\code\Hahn\backend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
