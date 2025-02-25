@@ -1,4 +1,4 @@
-# GraphsKit - Manipulação de grafos
+# PokéTeam - Pokémon team maker
 ![sitephoto](https://cdn.discordapp.com/attachments/895030530154823720/1343776270206500914/image.png?ex=67be80ac&is=67bd2f2c&hm=639038a7e6621f0aabb2539887b08c5f7fea6e3e7825420ac2fc8c2a52848c70&)
 
 > Project made for Hahn Software admission process.
