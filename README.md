@@ -7,29 +7,6 @@ PokéTeam is a Dotnet and Vue.js application that allows the user to:
 
 - **Setup his own pokémon team**
 
-## 👨‍🏫 Professor
-
-- Leonardo Vilela Cardoso
-
-## 🧑‍🎓 Integrantes
-
-- Gustavo Pereira de Oliveira
-- Luís Felipe Teixeira Dias Brescia
-- Luiz Felipe Campos de Morais
-- Marcus Vinícius Carvalho de Oliveira
-- Victor Reis Carlota
-
-## 📂 Estrutura de diretórios
-
-- `dados/`: Contém os arquivos de dados utilizados no trabalho.
-- `models/`: Contém os arquivos de modelos utilizados no trabalho.
-- `tests/`: Contém os arquivos de testes utilizados no trabalho.
-- `utils/`: Contém os arquivos de utilidades utilizados no trabalho.
-
-<!-- ## 📽️ Demonstração
-
-![DESC](docs/grafo.gif) -->
-
 ## ⌨️ User Guide
 
 1. Go to `backend` directory.
