@@ -1,38 +1,41 @@
 <script setup>
-import { ProductService } from '@/service/ProductService';
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 
-const products = ref(null);
+const battles = ref([
+    { trainer: 'Ash K.', team: 'Pikachu, Charizard, Greninja', result: 'Victory' },
+    { trainer: 'Team Rocket', team: 'Arbok, Weezing, Meowth', result: 'Defeat' },
+    { trainer: 'Misty', team: 'Starmie, Psyduck, Gyarados', result: 'Victory' },
+    { trainer: 'Brock', team: 'Onix, Geodude, Steelix', result: 'Draw' },
+    { trainer: 'Gary', team: 'Blastoise, Arcanine, Alakazam', result: 'Victory' }
+]);
 
-function formatCurrency(value) {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+function getStatusBadge(result) {
+    return {
+        'Victory': 'bg-green-100 text-green-800',
+        'Defeat': 'bg-red-100 text-red-800',
+        'Draw': 'bg-yellow-100 text-yellow-800'
+    }[result];
 }
-
-onMounted(() => {
-    ProductService.getProductsSmall().then((data) => (products.value = data));
-});
 </script>
 
 <template>
     <div class="card">
-        <div class="font-semibold text-xl mb-4">Recent Sales</div>
-        <DataTable :value="products" :rows="5" :paginator="true" responsiveLayout="scroll">
-            <Column style="width: 15%" header="Image">
-                <template #body="slotProps">
-                    <img :src="`https://primefaces.org/cdn/primevue/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" width="50" class="shadow" />
-                </template>
-            </Column>
-            <Column field="name" header="Name" :sortable="true" style="width: 35%"></Column>
-            <Column field="price" header="Price" :sortable="true" style="width: 35%">
-                <template #body="slotProps">
-                    {{ formatCurrency(slotProps.data.price) }}
-                </template>
-            </Column>
-            <Column style="width: 15%" header="View">
-                <template #body>
-                    <Button icon="pi pi-search" type="button" class="p-button-text"></Button>
-                </template>
-            </Column>
-        </DataTable>
+        <div class="font-semibold text-xl mb-4">Recent Battles</div>
+        <div class="space-y-6">
+            <div v-for="(battle, index) in battles" :key="index" class="flex items-start">
+                <div class="w-12 h-12 flex items-center justify-center bg-surface-100 rounded-full mr-4">
+                    <i class="pi pi-send text-surface-600"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-medium text-surface-900">{{ battle.trainer }}</span>
+                        <span :class="['px-3 py-1 rounded-full text-sm', getStatusBadge(battle.result)]">
+                            {{ battle.result }}
+                        </span>
+                    </div>
+                    <div class="text-muted-color text-sm">{{ battle.team }}</div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
